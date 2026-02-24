@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="invite-section" id="inviteSection">
+      <div class="container">
+        <h1 class="invitation-title">ЗАПРОШЕННЯ НА ВЕСІЛЛЯ</h1>
+        <p class="invitation-text">K & Y</p>
+        <img
+          class="inv-image"
+          src="./img/inv-photo.jpg"
+          alt="Наше фото"
+          width="200"
+          height="200"
+        />
+        <p class="invitation-second-text">
+          Натисніть на фото, щоб відкрити запрошення
+        </p>
+        <audio
+          id="weddingMusic"
+          src="./audio/AlexWarrenOrdinary.mp3"
+        ></audio>
+      </div>
+    </section>
+    <section class="location-section section">
+      <div class="container location-container">
+        <div class="pre-text">
+          <p>
+            Ми будемо щасливі розділити з вами радість події <br />
+            <span class="data">27 вересня 2025</span> <br />З нагоди нашого
+            весілля
+          </p>
+        </div>
+
+        <div class="location-wrapper">
+          <h2 class="location-title">Location</h2>
+          <p class="location-text">
+            Чекаємо Вас за адресою: <br />
+            м. Вінниця, ресторан "T-Bone"
+          </p>
+          <a
+            class="location-button"
+            href="https://www.google.com/maps/place/%D0%93%D1%80%D0%B8%D0%BB%D1%8C-%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD+%D0%A2-bone/@49.2300191,28.4478762,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5d484c6af665:0x98ed701d486c7336!8m2!3d49.2300191!4d28.4478762!16s%2Fg%2F11hn_q8r5k?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+            rel="noreferer noopener"
+            target="_blank"
+            >Переглянути на мапі</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="timing-section section">
+      <div class="container timing-wrapper">
+        <h2 class="timing-title">
+          Wedding <br />
+          program
+        </h2>
+        <ul class="timing-text-wrapper">
+          <li class="line">
+            <h3>13:20</h3>
+            <p>Церемонія розпису в РАГСі</p>
+          </li>
+          <li class="line">
+            <h3>14:30</h3>
+            <p>Збір гостей в ресторані</p>
+          </li>
+           <li class="line">
+            <h3>15:00</h3>
+            <p>Привітання молодят та фото з гостями</p>
+          </li>
+           <li class="line">
+            <h3>15:30</h3>
+            <p>Банкет</p>
+          </li>
+          <li class="line">
+            <h3>23:00</h3>
+            <p>Фінал</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+        
+    <section class="dresscode-section section">
+      <div class="container dresscode-container">
+        <img
+          class="dresscode-img"
+          src="./img/dresscode-photo.jpg"
+          alt="Наше фото 2"
+        />
+      </div>
+    </section>
+
+    <section class="rsvp-section section">
+      <div class="container rsvp-container">
+        <h2 class="rsvp-title">RSVP</h2>
+        <p class="rsvp-text">Просимо підтвердити вашу присутність</p>
+        <p class="rsvp-text">
+          Щоб зробити нашу подію комфортною для вас і для нас, дайте відповідь,
+          будь ласка, на декілька питань
+        </p>
+        <form class="rsvp-wrapper" id="rsvp-form"  action="https://script.google.com/macros/s/AKfycbxoGciRPkVpX7HZfrvIogMErHMBixqbA6lV5Mpg4LomIuKwbXM9sZJc9v2tiPLC0VPu/exec" method="post">
+          <label for="">Ваше ім'я та прізвище</label>
+          <input
+            class="underline-input"
+            type="text"
+            placeholder="Ваше ім'я"
+            name="fullname"
+            required
+          />
+          <fieldset class="rsvp-check-wrapper">
+            <legend>Чи зможете Ви бути присутнім?</legend>
+
+            <label
+              ><input type="radio" name="attendance" value="yes" /> Так, я
+              буду</label
+            ><br />
+            <label
+              ><input type="radio" name="attendance" value="no" /> На жаль, не
+              зможу</label
+            >
+          </fieldset>
+          <label for="">З ким Ви плануєте бути?</label>
+          <input
+            class="underline-input"
+            type="text"
+            placeholder="Ім'я"
+            name="partner"
+            required
+          />
+          <fieldset class="rsvp-check-wrapper">
+            <legend>Якому алкоголю надаєте перевагу?</legend>
+
+            <label
+              ><input type="checkbox" name="alcohol" value="red" /> Вино
+              червоне</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="white" /> Вино
+              біле</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="non-alcohol" /> Вино
+              безалкогольне</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="whiskey" />
+              Віскі</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="rum" /> Ром</label
+            ><br />
+            <label
+              ><input type="checkbox" name="alcohol" value="vodka" />
+              Горілка</label
+            >
+          </fieldset>
+
+          <button class="rsvp-button" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+    <section class="flowers-section section">
+      <div class="container">
+        <h2 class="flowers-title">Flowers</h2>
+        <p class="flowers-text">
+          Ми просимо вас не дарувати нам квіти, адже одразу після весілля ми
+          їдемо у довгоочікувану подорож і не встигнемо насолодитися цією
+          красою! <br />
+          Висловити вашу любов та радість можна у вигляді пляшки алкоголю, яке, ми обіцяємо, не зав'яне.
+        </p>
+      </div>
+    </section>
+    <section class="telegram-section section">
+      <div class="container telegram-wrapper">
+        <h2 class="telegram-title">Photo & Video</h2>
+        <p class="telegram-text">
+          Також ми створили телеграм-чат нашого свята, де можна буде поділитися
+          фото та відео в день та після весілля
+        </p>
+        <button class="telegram-button" type="button"  href="https://t.me/+quPOitb7UQQyNDU6">Telegram</button>
+      </div>
+    </section>
+    <section class="timer-section section">
+      <div class="container">
+        <h2 class="timer-title">До події залишилось:</h2>
+        <div class="countdown">
+      <div class="time-item">
+        <span id="days" class="time-num">00</span>
+        <span class="time-label">днів</span>
+      </div>
+      <div class="time-item">
+        <span id="hours" class="time-num">00</span>
+        <span class="time-label">годин</span>
+      </div>
+      <div class="time-item">
+        <span id="minutes" class="time-num">00</span>
+        <span class="time-label">хвилин</span>
+      </div>
+      <div class="time-item">
+        <span id="seconds" class="time-num">00</span>
+        <span class="time-label">секунд</span>
+      </div>
+      </div>
+    </section>
+    </main>
+    <footer class="goodbye-section section">
+      <div class="container"><h2 class="goodbye-text">ДО ЗУСТРІЧІ <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 
+               4 4 6.5 4 8.28 4 10 5.5 12 7.5 
+               14 5.5 15.72 4 17.5 4 20 4 
+               22 6 22 8.5c0 3.78-3.4 6.86-8.55 
+               11.54L12 21.35z"/>
+    </svg> </h2></div>
+    </footer>
+    <script type="module" src="./js/main.js" defer></script>
+  </body>
+</html>
